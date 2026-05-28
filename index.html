@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@judiecat | Archive</title>
+    
+    <style>
+        /* --- MODERN THEME (DEFAULT) --- */
+        :root {
+            --bg: #000000;
+            --text: #ffffff;
+            --accent: #007AFF;
+            --card: #0a0a0a;
+            --border: #1a1a1a;
+            --font-weight: 100;
+            --radius: 0px;
+        }
+
+        /* --- LEGACY MODE (iOS 6) --- */
+        #legacy-trigger:checked ~ .site-wrapper {
+            --bg: #4c566c; 
+            --accent: #1e458e;
+            --card: rgba(0, 0, 0, 0.4);
+            --border: rgba(0,0,0,0.6);
+            --font-weight: 500;
+            --radius: 10px;
+            --bg-img: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 1%),
+                      linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+        }
+
+        body {
+            margin: 0;
+            background-color: #000;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #legacy-trigger { display: none; }
+
+        .site-wrapper {
+            background-color: var(--bg);
+            background-image: var(--bg-img);
+            background-size: 100px 100px, 4px 4px, 4px 4px;
+            color: var(--text);
+            min-height: 100vh;
+            transition: all 0.4s ease;
+            text-align: center;
+            font-weight: var(--font-weight);
+        }
+
+        .mode-label {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            font-size: 10px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+
+        header { padding: 80px 20px 40px; }
+        .hero-img {
+            width: 230px;
+            border-radius: 44px;
+            border: 1px solid var(--border);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { font-size: 3rem; margin: 0; letter-spacing: 4px; text-transform: lowercase; }
+        .subtitle { font-size: 0.7rem; color: var(--accent); letter-spacing: 4px; text-transform: uppercase; margin-top: 10px; }
+
+        .nav-links { margin: 30px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+        .btn {
+            color: white; text-decoration: none; font-size: 11px; padding: 12px 24px;
+            letter-spacing: 2px; background: var(--card); border: 1px solid var(--border);
+        }
+
+        /* iOS 6 Glossy Buttons */
+        #legacy-trigger:checked ~ .site-wrapper .btn {
+            background: linear-gradient(to bottom, #74b0ed 0%, #1e458e 100%);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 2px 4px rgba(0,0,0,0.4);
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+            border: 1px solid #002244;
+            border-radius: 6px;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        .device-link { text-decoration: none; color: inherit; display: block; }
+        .device-link:active { transform: scale(0.98); }
+
+        .card {
+            background: var(--card); border: 1px solid var(--border);
+            padding: 30px; text-align: left; border-radius: var(--radius);
+        }
+
+        #legacy-trigger:checked ~ .site-wrapper .card {
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        .status { font-size: 9px; float: right; letter-spacing: 1px; padding: 2px 6px; border: 1px solid #333; }
+        .card-h { font-size: 1.4rem; margin: 0 0 10px; font-weight: inherit; }
+        .spec-line { font-size: 10px; color: var(--accent); display: block; margin-bottom: 10px; }
+        .card-p { font-size: 14px; opacity: 0.6; line-height: 1.6; margin: 0; }
+
+        footer { padding: 100px 20px; font-size: 10px; opacity: 0.3; letter-spacing: 4px; }
+    </style>
+</head>
+<body>
+
+    <!-- This checkbox is what makes the theme switch! -->
+    <input type="checkbox" id="legacy-trigger">
+    <label for="legacy-trigger" class="mode-label">TOGGLE LEGACY</label>
+
+    <div class="site-wrapper">
+        <header>
+            <!-- IMPORTANT: MAKE SURE YOUR PHOTO IS NAMED cat-phone.jpg ON GITHUB -->
+            <img src="cat-phone.jpg" alt="@judiecat" class="hero-img">
+            <h1>@judiecat</h1>
+            <div class="subtitle">Digital Preservation Archive</div>
+            
+            <div class="nav-links">
+                <a href="https://youtube.com/@Judiecat" class="btn" target="_blank">YOUTUBE</a>
+                <a href="https://reddit.com/user/Silver-Project7274/" class="btn" target="_blank">REDDIT</a>
+                <a href="https://www.tiktok.com/@judiecat" class="btn" target="_blank">TIKTOK</a>
+                <a href="https://www.roblox.com/users/1225950760/profile" class="btn" target="_blank">ROBLOX</a>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                
+                <!-- 1. Modern Unit -->
+                <div class="card">
+                    <span class="status" style="color:#4cd964">ACTIVE</span>
+                    <h3 class="card-h">iPhone 16e</h3>
+                    <span class="spec-line">A18 CHIP // 48MP CAMERA</span>
+                    <p class="card-p">Modern daily driver. High-performance computing meets 48MP computational photography.</p>
+                </div>
+
+                <!-- 2. MacBook Air -->
+                <a href="https://everymac.com/systems/apple/macbook-air/specs/macbook-air-core-i5-1.6-13-early-2015-specs.html" 
+                   class="device-link" target="_blank" onclick="return confirm('External Wiki: View technical specs for the 2015 MacBook Air?')">
+                    <div class="card">
+                        <span class="status" style="color:#4cd964">ACTIVE</span>
+                        <h3 class="card-h">MacBook Air</h3>
+                        <span class="spec-line">2015 // GLOWING LOGO</span>
+                        <p class="card-p">The final iteration of classic Apple I/O. A studio essential with MagSafe and full SD support.</p>
+                    </div>
+                </a>
+
+                <!-- 3. Rebel T4i -->
+                <a href="https://en.wikipedia.org/wiki/Canon_EOS_650D" 
+                   class="device-link" target="_blank" onclick="return confirm('External Wiki: View technical specs for the Rebel T4i?')">
+                    <div class="card">
+                        <span class="status" style="color:#4cd964">ACTIVE</span>
+                        <h3 class="card-h">Canon Rebel T4i</h3>
+                        <span class="spec-line">18.0 MP // APS-C SENSOR</span>
+                        <p class="card-p">The cinematic workhorse. Large-sensor optics for high-quality content creation.</p>
+                    </div>
+                </a>
+
+                <!-- 4. iPhone 4s -->
+                <a href="https://theiphonewiki.com/wiki/iPhone_4S" 
+                   class="device-link" target="_blank" onclick="return confirm('External Wiki: View The iPhone Wiki for the 4s?')">
+                    <div class="card">
+                        <span class="status" style="color:#ff3b30">WI-FI ONLY</span>
+                        <h3 class="card-h">iPhone 4s</h3>
+                        <span class="spec-line">iOS 7.1.2 // 3G SUNSET</span>
+                        <p class="card-p">Optimized with Lyncis. Post-3G era archival unit. Dedicated to legacy UI preservation.</p>
+                    </div>
+                </a>
+
+                <!-- 5. iPod Touch 4 -->
+                <a href="https://theiphonewiki.com/wiki/iPod_touch_(4th_generation)" 
+                   class="device-link" target="_blank" onclick="return confirm('External Wiki: View The iPhone Wiki for the Touch 4?')">
+                    <div class="card">
+                        <span class="status" style="color:#4cd964">WI-FI</span>
+                        <h3 class="card-h">iPod touch 4</h3>
+                        <span class="spec-line">iOS 6.1.6 // RETINA</span>
+                        <p class="card-p">The skeuomorphic standard. Preserving the Retina era of the A4 chip.</p>
+                    </div>
+                </a>
+
+                <!-- 6. iPod Touch 2 -->
+                <a href="https://theiphonewiki.com/wiki/iPod_touch_(2nd_generation)" 
+                   class="device-link" target="_blank" onclick="return confirm('External Wiki: View The iPhone Wiki for the Touch 2?')">
+                    <div class="card">
+                        <span class="status" style="color:#4cd964">WI-FI</span>
+                        <h3 class="card-h">iPod touch 2</h3>
+                        <span class="spec-line">iOS 4.2.1 // MC MODEL</span>
+                        <p class="card-p">The bridge between eras. Final software version supported by 2nd Gen hardware.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <footer>HELVETICA NEUE ULTRALIGHT // DISPLAY ONLY // @JUDIECAT</footer>
+    </div>
+
+</body>
+</html>
