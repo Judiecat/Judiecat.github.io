@@ -17,10 +17,8 @@
             text-align: center;
         }
 
-        /* The hidden toggle */
         #legacy-trigger { display: none; }
 
-        /* THE TOGGLE BUTTON */
         .mode-label {
             position: fixed;
             top: 15px;
@@ -36,8 +34,7 @@
             -webkit-user-select: none;
         }
 
-        /* --- 2. LEGACY MODE OVERRIDES (PURE CSS) --- */
-        /* This section tells iOS 7 exactly what to change without using variables */
+        /* --- 2. LEGACY MODE OVERRIDES --- */
         #legacy-trigger:checked ~ .wrapper {
             background-color: #4c566c;
             background-image: linear-gradient(rgba(0,0,0,0.1) 2px, transparent 2px),
@@ -76,7 +73,6 @@
             text-transform: uppercase;
         }
 
-        /* iOS 6 Glossy Buttons for Legacy Mode */
         #legacy-trigger:checked ~ .wrapper .btn {
             background: #1e458e;
             background-image: -webkit-linear-gradient(top, #74b0ed 0%, #1e458e 100%);
@@ -97,7 +93,6 @@
             text-align: left;
         }
 
-        /* Skeuomorphic Card for Legacy Mode */
         #legacy-trigger:checked ~ .wrapper .card {
             background: rgba(0,0,0,0.3);
             border-radius: 8px;
@@ -108,7 +103,7 @@
         .status { font-size: 8px; float: right; border: 1px solid #333; padding: 2px 5px; text-transform: uppercase; }
         .card-h { font-size: 20px; margin: 0; font-weight: 100; display: block; }
         .spec-line { font-size: 10px; color: #007AFF; display: block; margin: 5px 0 10px; }
-        .card-p { font-size: 14px; opacity: 0.7; line-height: 1.5; margin: 0; }
+        .card-p { font-size: 13px; opacity: 0.7; line-height: 1.5; margin: 0; }
 
         #legacy-trigger:checked ~ .wrapper .spec-line { color: #fff; opacity: 0.5; }
 
@@ -127,60 +122,64 @@
             <div class="subtitle">Digital Preservation Archive</div>
             
             <div class="nav-links">
-                <a href="https://youtube.com/@Judiecat" class="btn">YouTube</a>
                 <a href="https://reddit.com/user/Silver-Project7274/" class="btn">Reddit</a>
-                <a href="https://www.tiktok.com/@judiecat" class="btn">TikTok</a>
                 <a href="https://www.roblox.com/users/1225950760/profile" class="btn">Roblox</a>
             </div>
         </header>
 
         <div class="container">
             
+            <!-- iPhone 16e -->
             <div class="card">
                 <span class="status" style="color:#4cd964">Active</span>
                 <span class="card-h">iPhone 16e</span>
-                <span class="spec-line">A18 CHIP // 48MP OPTICS</span>
-                <p class="card-p">Modern daily driver. High-performance computing.</p>
+                <span class="spec-line">A18 ARCHITECTURE // 48MP PHOTONIC ENGINE</span>
+                <p class="card-p">Primary computational workstation utilizing the A18 Neural Engine for real-time telemetry and 48MP high-fidelity archival capture.</p>
             </div>
 
+            <!-- MacBook Air -->
             <div class="card">
                 <span class="status" style="color:#4cd964">Active</span>
                 <span class="card-h">MacBook Air</span>
-                <span class="spec-line">2015 // GLOWING LOGO</span>
-                <p class="card-p">The final iteration of classic Apple I/O.</p>
+                <span class="spec-line">EARLY 2015 // MAGSAFE 2 // THUNDERBOLT 2</span>
+                <p class="card-p">The final Broadwell-architecture workstation featuring the integrated LED-backlit Apple logo and legacy peripheral I/O support.</p>
             </div>
 
+            <!-- Rebel T4i -->
             <div class="card" onclick="window.location.href='https://en.wikipedia.org/wiki/Canon_EOS_650D'">
                 <span class="status" style="color:#4cd964">Active</span>
                 <span class="card-h">Rebel T4i</span>
-                <span class="spec-line">18.0 MP // APS-C SENSOR</span>
-                <p class="card-p">Cinematic workhorse. Large-sensor optics.</p>
+                <span class="spec-line">DIGIC 5 // APS-C CMOS SENSOR</span>
+                <p class="card-p">Optical imaging workhorse utilizing large-pixel pitch and phase-detection AF for high-dynamic-range cinematic content production.</p>
             </div>
 
+            <!-- iPhone 4s -->
             <div class="card" onclick="window.location.href='https://theiphonewiki.com/wiki/iPhone_4S'">
                 <span class="status" style="color:#ff3b30">Wi-Fi Only</span>
                 <span class="card-h">iPhone 4s</span>
-                <span class="spec-line">iOS 7.1.2 // LYNCIS</span>
-                <p class="card-p">A5 legacy unit. Optimized with Lyncis UI.</p>
+                <span class="spec-line">A5 DUAL-CORE // LYNCIS // 3G SUNSET</span>
+                <p class="card-p">Archival A5 hardware maintained on 7.1.2. Utilizing Lyncis UI injection to preserve Retinal fidelity post-cellular spectrum sunset.</p>
             </div>
 
+            <!-- iPod Touch 4 -->
             <div class="card" onclick="window.location.href='https://theiphonewiki.com/wiki/iPod_touch_(4th_generation)'">
                 <span class="status" style="color:#4cd964">Wi-Fi</span>
                 <span class="card-h">iPod touch 4</span>
-                <span class="spec-line">iOS 6.1.6 // RETINA</span>
-                <p class="card-p">The skeuomorphic standard. A4 chip.</p>
+                <span class="spec-line">A4 SoC // RETINA DISPLAY // iOS 6.1.6</span>
+                <p class="card-p">The skeuomorphic preservation standard. Utilizing the A4 processor for the dedicated rendering of 2012-era pixel-perfect gloss assets.</p>
             </div>
 
+            <!-- iPod Touch 2 -->
             <div class="card" onclick="window.location.href='https://theiphonewiki.com/wiki/iPod_touch_(2nd_generation)'">
                 <span class="status" style="color:#4cd964">Wi-Fi</span>
                 <span class="card-h">iPod touch 2</span>
-                <span class="spec-line">iOS 4.2.1 // MC MODEL</span>
-                <p class="card-p">The bridge between eras. Final software for 2nd Gen.</p>
+                <span class="spec-line">MC086LL // ARMv6 SILICON // 30-PIN</span>
+                <p class="card-p">Finalized legacy node. Optimized for 30-pin analog audio throughput and period-accurate iPhoneOS 4.2.1 application execution.</p>
             </div>
 
         </div>
 
-        <footer>EST. 2025 // @JUDIECAT</footer>
+        <footer>EST. 2024 // DISPLAY ONLY // @JUDIECAT // NO CONTACT</footer>
     </div>
 
 </body>
