@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@judiecat | Legacy Archive</title>
+    
+    <!-- Fallback for thin typography on non-Apple devices -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            /* Direct targeting of Helvetica Neue Ultralight */
+            font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", "Inter", sans-serif;
+            font-weight: 100;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero-img {
+            width: 250px;
+            border-radius: 44px;
+            border: 1px solid #1a1a1a;
+            margin-bottom: 35px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.05);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 100;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: lowercase;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #007AFF; 
+            letter-spacing: 4px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #080808;
+            border: 1px solid #151515;
+            padding: 40px;
+            text-align: left;
+        }
+
+        .card h3 {
+            font-weight: 100;
+            font-size: 1.6rem;
+            margin: 0 0 10px 0;
+        }
+
+        .card .spec {
+            font-size: 0.8rem;
+            color: #888;
+            display: block;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.7;
+            font-weight: 200;
+        }
+
+        .nav-links {
+            margin-top: 50px;
+        }
+
+        .btn {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            border: 1px solid #333;
+            padding: 12px 30px;
+            margin: 0 10px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        footer {
+            padding: 120px 20px;
+            font-size: 0.7rem;
+            opacity: 0.3;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="cat-phone.jpg" alt="@judiecat" class="hero-img">
+        <h1>@judiecat</h1>
+        <div class="subtitle">Legacy Archive</div>
+        
+        <div class="nav-links">
+            <a href="https://youtube.com/@Judiecat" class="btn" target="_blank">YOUTUBE</a>
+            <a href="https://reddit.com/user/Silver-Project7274/" class="btn" target="_blank">REDDIT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <h3>iPhone 4s</h3>
+                <span class="spec">iOS 7.1.2 // LYNCIS</span>
+                <p>Curated with Lyncis for a modern interface. This A5 unit represents the peak of legacy performance and customization.</p>
+            </div>
+
+            <div class="card">
+                <h3>iPod touch 4</h3>
+                <span class="spec">iOS 6.1.6 // RETINA</span>
+                <p>A dedicated archive for skeuomorphic design. Preserving the Retina era of the A4 chip and classic iOS gaming.</p>
+            </div>
+
+            <div class="card">
+                <h3>iPod touch 2</h3>
+                <span class="spec">iOS 4.2.1 // MC MODEL</span>
+                <p>The bridge between eras. A pure nostalgia build running the final software version supported by 2nd Gen hardware.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        HELVETICA NEUE ULTRALIGHT // 2024
+    </footer>
+
+</body>
+</html>
